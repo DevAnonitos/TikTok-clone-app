@@ -3,6 +3,11 @@
 
 :root {
     --primary-color: #fe2c55;
+
+    // default layout
+    --header-height-layout: 60px;
+    --default-layout-width: 1150px;
+    --defaut-layout-width-slidebar: 356px;
 }
 
 *{
@@ -37,7 +42,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 html::-webkit-scrollbar-thumb:active {
-    background: rgb(68, 68, 68);
+    background: rgb(124, 119, 119);
     border-radius: 10px;
 }
 
