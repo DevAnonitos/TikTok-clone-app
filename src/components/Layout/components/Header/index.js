@@ -2,6 +2,9 @@ import styles from './Header.module.scss';
 import classNames from 'classnames/bind';
 import images from '@/assets/image';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleXmark, faSpinner, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+
 const cx = classNames.bind(styles);
 
 function Header() {
@@ -18,12 +21,17 @@ function Header() {
                     />
                     <button className={cx('clear')}>
                         {/* clear */}
+                        <FontAwesomeIcon icon={faCircleXmark} />
                     </button>
                     {/* Loading */}
+                    <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />
                     <button className={cx('search-btn')}>
                         {/* search */}
+                        <FontAwesomeIcon icon={faMagnifyingGlass} />
                     </button>
-
+                </div>
+                <div className={cx('action')}>
+                    
                 </div>
             </div>
         </header>
