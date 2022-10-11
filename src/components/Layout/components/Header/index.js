@@ -23,11 +23,11 @@ function Header() {
                     <button className={cx('search-btn')}>
                         {/* search */}
                     </button>
-                    
+
                 </div>
             </div>
         </header>
     );
-}
+};
 
 export default Header;
