@@ -8,14 +8,20 @@ const cx = classNames.bind(styles);
 function AccountItems() {
     return ( 
         <div className={cx('wrapper')}>
-            <img className={cx('avatar')} src="" alt="" />
+            {/* images accounts */}
+            <img className={cx('avatar')} src="https://static2.yan.vn/YanNews/2167221/201904/nguyen-viet-phuong-thoa-la-ai-d8d2d2ea.jpg" alt="Hoaaa" />
+            
+            {/* user info */}
             <div className={cx('info')}>
-                <p className={cx('names')}>Nguyen Van Son</p>
+                <p className={cx('names')}>
+                    <span>nguyen Van Son</span>
+                    <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />
+                </p>
                 <span className={cx('username')}>
-                    <span>nguyenVanA</span>
-                    <FontAwesomeIcon icon={faCheckCircle} />
+                    nguyenVanA
                 </span>
             </div>
+
         </div> 
     );
 }
