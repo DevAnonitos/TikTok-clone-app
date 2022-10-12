@@ -17,6 +17,7 @@
 .logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .search, 
@@ -44,7 +45,7 @@
     }
 
     input:not(:placeholder-shown) ~ .search-btn {
-        color: #fff;
+        color: #b2bec3;
     }
 
     &::after {
@@ -90,6 +91,6 @@
     &:hover {
         cursor: pointer;
         background-color: #c9ecef;
-        color: #fff
+        color: #b2bec3;
     }
 }

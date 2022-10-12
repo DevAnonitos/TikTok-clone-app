@@ -2,6 +2,9 @@
 import styles from './Header.module.scss';
 import classNames from 'classnames/bind';
 import images from '@/assets/image';
+
+// components and feature
+import Button from '@/components/Button';
 import {Wrapper as PopperWrapper } from '@/components/Popper';
 
 // lib sub from components
@@ -72,7 +75,7 @@ function Header() {
                     </div>
                 </Tippy>
                 <div className={cx('action')}>
-                    
+                    <Button primary>Login</Button>
                 </div>
             </div>
         </header>

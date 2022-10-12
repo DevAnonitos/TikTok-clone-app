@@ -2,10 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,700&display=swap");
 :root {
   --primary-color: #fe2c55;
+  --header-color: #c7ecee;
+  --text-color: #555;
+  --check-color: #1B9CFC;
+  --white-color: #fff;
+  --header-height-layout: 60px;
+  --default-layout-width: 1150px;
+  --defaut-layout-width-slidebar: 356px;
+  --header-search-bar: 46px;
+  --width-search-bar: 361px;
+  --header-search-btn-size: 52px;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -33,7 +46,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 html::-webkit-scrollbar-thumb:active {
-  background: rgb(68, 68, 68);
+  background: rgb(124, 119, 119);
   border-radius: 10px;
 }
 
@@ -42,4 +55,19 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+}
+
+button, input, [tabindex] {
+  outline: none;
+  border: none;
+}
+
+a[href] {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+  list-style: none;
 }/*# sourceMappingURL=GlobalStyle.css.map */
