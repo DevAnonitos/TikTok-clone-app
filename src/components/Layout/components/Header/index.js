@@ -12,7 +12,7 @@ import Tippy from '@tippyjs/react/headless';
 
 // material and hook
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark, faSpinner, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faCircleXmark, faSpinner, faMagnifyingGlass, faSignIn } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
 import AccountItems from '@/components/AccountItems';
 
@@ -75,7 +75,8 @@ function Header() {
                     </div>
                 </Tippy>
                 <div className={cx('action')}>
-                    <Button primary>Login</Button>
+                    <Button text>Upload</Button>
+                    <Button primary leftIcon={<FontAwesomeIcon icon={faSignIn} />}>Login</Button>
                 </div>
             </div>
         </header>
