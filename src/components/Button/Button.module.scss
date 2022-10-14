@@ -1,6 +1,7 @@
 .wrapper {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     font-size: 1.6rem;
     font-weight: 700;
     min-width: 100px;
@@ -21,9 +22,9 @@
     }
 }
 
-.icon + .title, .title + .icon{
-    margin-left: 8px;
-}
+// .icon + .title, .title + .icon{
+//     margin-left: 8px;
+// }
 
 // button types
 
