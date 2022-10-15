@@ -18,6 +18,7 @@ function Menu({children, items=[]}) {
 
     return (
         <Tippy
+            visible
             interactive
             placement='bottom-end'
             render={attrs => (
