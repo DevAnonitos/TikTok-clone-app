@@ -32,7 +32,8 @@ const MENU_ITEMS = [
     },
     {
         icon: <FontAwesomeIcon icon={faKeyboard} />,
-        title: 'Keyboard and shortcuts',
+        title: 'Setting',
+        to: '/setting'
     }
 ]
 

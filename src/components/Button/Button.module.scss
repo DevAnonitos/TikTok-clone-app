@@ -28,6 +28,16 @@
 
 // button types
 
+.icon {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    color: #FC427B;
+}
+
 .rounded {
     border-radius: 999px;
     box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
