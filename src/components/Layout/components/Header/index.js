@@ -24,6 +24,35 @@ const MENU_ITEMS = [
     {
         icon: <FontAwesomeIcon icon={faEarthAsia} />,
         title: 'English',
+        children: {
+            title: 'Language',
+            data: [
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng việt',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'jp',
+                    title: '日本語',
+                },
+                {
+                    code: 'chs',
+                    title: '中文',
+                },
+                {
+                    code: 'korea',
+                    title: '대한민국',
+                },
+            ]
+        },
     },
     {
         icon: <FontAwesomeIcon icon={faCircleQuestion} />,
