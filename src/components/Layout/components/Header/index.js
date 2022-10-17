@@ -36,10 +36,6 @@ const MENU_ITEMS = [
                     title: 'Tiếng việt',
                 },
                 {
-                    code: 'en',
-                    title: 'English',
-                },
-                {
                     code: 'jp',
                     title: '日本語',
                 },
@@ -76,7 +72,10 @@ function Header() {
             setSearchResult([])
       }, 3000)
     }, [])
-    
+    // handle Logic events
+    const handleMenuChange = (menuItems) => {
+        console.log(menuItems);
+    }
 
     // fnc components
     return ( 
@@ -131,6 +130,7 @@ function Header() {
 
                     <Menu
                         items={MENU_ITEMS} 
+                        onChange={handleMenuChange}
                     >
                         <button className={cx('more-btn')}>
                             <FontAwesomeIcon icon={faEllipsisVertical} />

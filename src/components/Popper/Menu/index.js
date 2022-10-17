@@ -11,7 +11,11 @@ import Header from "./Header";
 
 const cx = classNames.bind(styles);
 
-function Menu({children, items=[]}) {
+const deFaultFn = () => {
+
+}
+
+function Menu({children, items=[], onChange = deFaultFn}) {
 
     const [history, setHistory] = useState([{ data: items }]);
     const current = history[history.length - 1];
@@ -22,6 +26,8 @@ function Menu({children, items=[]}) {
             return <MenuItems key={index} data={item} onClick={() => {
                 if(isParent) {
                     setHistory(prev => [...prev, item.children])
+                }else {
+                    onChange(items);
                 }
             }} />
         });
@@ -36,7 +42,9 @@ function Menu({children, items=[]}) {
             render={attrs => (
                 <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
                     <PopperWrapper className={cx('menu-popper')}>
-                        <Header title="Language" />
+                        {history.length > 1 && <Header title="Language" onBack={() =>{
+                            setHistory((prev) => prev.slice(0, prev.length - 1))
+                        }}/>}
                         {renderItems()}
                     </PopperWrapper>
                 </div>    
