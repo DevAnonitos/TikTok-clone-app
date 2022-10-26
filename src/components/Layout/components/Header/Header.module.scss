@@ -97,6 +97,10 @@
 }
 
 // Menu items
+.action {
+    display: flex;
+    align-items: center;
+}
 
 .more-btn {
     font-size: 2rem;
@@ -107,4 +111,21 @@
     &:hover {
         cursor: pointer;
     }
+}
+
+.action-btn {
+    color: #161823;
+    background-color: transparent;
+    font-size: 2.2rem;
+    padding: 4px 16px;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 12px;
+    cursor: pointer;
 }
