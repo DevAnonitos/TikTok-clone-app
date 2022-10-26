@@ -7,6 +7,7 @@ import images from '@/assets/image';
 import Button from '@/components/Button';
 import {Wrapper as PopperWrapper } from '@/components/Popper';
 import Menu from '@/components/Popper/Menu';
+import Image from '@/components/Image';
 
 // lib sub from components
 import Tippy from '@tippyjs/react'
@@ -18,6 +19,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark, faSpinner, faMagnifyingGlass, faSignIn, faEllipsisVertical, faEarthAsia, faCircleQuestion, faKeyboard, faCloudUpload, faMessage, faUser, faCoins, faGear, faLongArrowAltUp, faSignOut } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
 import AccountItems from '@/components/AccountItems';
+import { UploadIcon, MessageIcon } from '@/components/Icons';
 
 
 const cx = classNames.bind(styles);
@@ -161,7 +163,7 @@ function Header() {
                                 placement='bottom'
                             >
                                 <button className={cx('action-btn')}>
-                                    <FontAwesomeIcon icon={faCloudUpload} />
+                                    <UploadIcon />
                                 </button>
                             </Tippy>
 
@@ -170,7 +172,7 @@ function Header() {
                                 placement='bottom'
                             >
                                 <button className={cx('action-btn')}>
-                                    <FontAwesomeIcon icon={faMessage} />
+                                    <MessageIcon />
                                 </button>
                             </Tippy>
                         </>
@@ -186,7 +188,7 @@ function Header() {
                         onChange={handleMenuChange}
                     >
                         {currentUser ? (
-                            <img src="https://1.bp.blogspot.com/-z8Npt8UhDa8/YBjXVGREGAI/AAAAAAAA4TQ/2v0Y-csthiE6YoSlFxsfn3SHLlR0E-oigCLcBGAsYHQ/s0/Khanh-Huyen-2k4%2B%25282%2529.jpg" 
+                            <Image src="https://1.bp.blogspot.com/-z8Npt8UhDa8/YBjXVGREGAI/AAAAAAAA4TQ/2v0Y-csthiE6YoSlFxsfn3SHLlR0E-oigCLcBGAsYHQ/s0/Khanh-Huyen-2k4%2B%25282%2529.jpg" 
                             className={cx('user-avatar')}
                             alt="logo" />
                         ) :(
